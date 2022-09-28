@@ -15,7 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class GreetingController {
     
-    @GetMapping("/greeting")
+    @GetMapping("/greeting") 
+    // tells spring which mapping is going to handle which request
     public String greeting(Map<String, Object> model) {
         // passing model back to our template
         model.put("message", "Hello Isaac");
