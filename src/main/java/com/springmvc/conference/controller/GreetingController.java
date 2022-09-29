@@ -22,4 +22,12 @@ public class GreetingController {
         model.put("message", "Hello Isaac");
         return "greeting";
     }
+    
+    @GetMapping("/thyme") 
+    // tells spring which mapping is going to handle which request
+    public String thymePage(Map<String, Object> model) {
+        // passing model back to our template
+        model.put("message", "Hello Isaac");
+        return "thyme";
+    }
 }
