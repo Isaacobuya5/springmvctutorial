@@ -4,12 +4,15 @@
  */
 package com.springmvc.conference.model;
 
+import javax.validation.constraints.NotEmpty;
+
 /**
  *
  * @author Zakol
  */
 public class Registration {
     
+    @NotEmpty
     private String name;
 
     public String getName() {
